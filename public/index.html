@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sass/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Creative Technologies</title>
+
+    <style>
+
+        .card-img-top {
+            width: 200px;
+            height: 150px;
+        }
+
+        #pricing {
+            padding-top: 0px;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+
+        .margincustom {
+            margin-top: -65px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            .navbarLogoSize{
+                font-size: 40px;        
+            } 
+        }
+
+        @media screen and (max-width: 768px) {
+            .explore-btn {
+                margin: 15px auto;
+                width: 260px !important;
+                height: 50px !important;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light "> 
+        <div class="container py-3 ">
+            <a href="#intro" class="navbar-brand">
+                <span class="fw-bold text-secondary h2 navbarLogoSize"><i class="bi bi-file-code"></i> Creative Technologies</span>
+            </a>
+            <!-- Toggle button for mobile-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="toggle-navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Mavbar links -->
+            <div class="collapse navbar-collapse justify-content-end align-center " id="main-nav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#who-are-we">Who Are We</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#work">Our Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews" >Our Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" >Contact Us</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link btn btn-secondary text-white px-3 d-md-inline d-none" href="#pricing" >Buy Now</a>
+                    </li> -->
+                </ul>
+            </div>
+         </div>
+    </nav>
+
+    <!-- Main image and text -->
+    <section id="intro" class="bg-light">
+        <div class="container-lg pb-5">
+            <div class="row g-5 justify-content-center align-items-center">
+                <div class="col-md-5 text-center text-md-start ">
+                    <h1>
+                        <div class="display-2">Let's Create</div>
+                        <div class="display-5">Creative digital products</div>
+                    </h1>
+                    <p class="my-4 text-muted lead">
+                        We are a team of 200 engineers, doers and creatives, who will accelerate your awesome idea to market.                    </p>
+                    <a href="#work" class="btn btn-secondary btn-lg px-4 ">Explore Our Work</a>
+                    <!-- open sidebar / offcanvas -->
+                    <a href="#sidebar" class="explore-btn d-inline-block py-2 ms-3 w-50 btn btn-outline-secondary btn-lg" data-bs-toggle="offcanvas" role="button" aria-controls="sidebar">
+                        Let's Talk
+                    </a>
+                </div>
+
+                <div class="col-md-5 text-center d-none d-md-block ">
+                    <!-- Tooltip (tt is not a bootstrap class) -->
+                    <span class="tt" data-bs-placement="bottom" title="Creative Technologies">
+                        <img class="img-fluid" src="images/undraw_Push_notifications_re_t84m.svg" alt="">
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+       <!-- Topics at a glance -->
+       <section id="who-are-we">
+        <div class="container-md">
+            <div class="text-center">
+                <h2>Who Are We</h2>
+                <p class="lead text-muted">
+                    We help product vendors create impactful and futuristic digital solutions to solve real user problems.​                </p>
+            </div>
+            <div class="row my-5 g-5 justify-content-around align-items-center">
+                <div class="col-6 col-lg-4">
+                    <img src="images/undraw_Social_influencer_re_beim.svg" class="img-fluid" alt="">
+                </div>
+
+                <div class="col-lg-6">
+                <!-- Accordion -->
+                <div class="accordion" id="chapters">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-1" aria-expanded="true" aria-controls="chapter-1">
+                            Full Stack Development
+                        </button>
+                        </h2>   
+                        <div id="chapter-1" class="accordion-collapse collapse show" aria-labelledby="heading-1" data-bs-parent="#chapters">
+                            <div class="accordion-body">
+                              <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                            </div>
+                      </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-2">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-2" aria-expanded="true" aria-controls="chapter-2">
+                        Machine Learning
+                    </button>
+                    </h2>   
+                    <div id="chapter-2" class="accordion-collapse collapse " aria-labelledby="heading-2" data-bs-parent="#chapters">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                  </div>
+            </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-3">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-3" aria-expanded="true" aria-controls="chapter-3">
+                    Blockchain
+                </button>
+                </h2>   
+                <div id="chapter-3" class="accordion-collapse collapse " aria-labelledby="heading-3" data-bs-parent="#chapters">
+                    <div class="accordion-body">
+                      <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+              </div>
+        </div>
+
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-4">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#chapter-4" aria-expanded="true" aria-controls="chapter-4">
+                    User Experience
+                </button>
+                </h2>   
+                <div id="chapter-4" class="accordion-collapse collapse " aria-labelledby="heading-4" data-bs-parent="#chapters">
+                    <div class="accordion-body">
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                    </div>
+            </div>
+        </div>
+
+<!-- Closing div of column -->
+    </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Cards -->
+    <section id="work">
+        <div class="container mb-5">
+            <div class="text-center">
+                <h1>Our Tremendous Work</h1>
+                <p class="lead text-muted">
+                    We have helped our clients launch over 150 successful digital products in global markets.
+                </p>
+            </div>
+
+            <div class="row my-1 align-items-center justify-content-center">
+                <div class="col-11 col-lg-3 col-xl-3 g-4">
+                    <div class="card border-1 shadow-lg py-3">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">Full Stack Development</h4>
+                            <p class="lead card-subtitle mt-3">Front to Back</p>
+                            <img src="images/undraw_react_y7wq.svg" class="card-img-top py-3" alt="...">
+                            <p class="card-text mx-5 text-muted d-none d-lg-block"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, dicta.</p>
+                            <a href="" class="btn btn-outline-primary btn-lg px-5 mt-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#full-stack" aria-controls="offcanvasTop">Learn More</a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-11 col-lg-3 col-xl-3 g-4">
+                    <div class="card border-1 shadow-lg py-3">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">Machine Learning</h4>
+                            <p class="lead card-subtitle mt-3">IoT and Big Data</p>
+                            <img src="images/undraw_version_control_re_mg66.svg" class="card-img-top py-3" alt="...">
+                            <p class="card-text mx-5 text-muted d-none d-lg-block"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, dicta.</p>
+                            <a href="" class="btn btn-outline-primary btn-lg px-5 mt-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#machine-learning" aria-controls="offcanvasTop">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-11 col-lg-3 col-xl-3 g-4">
+                    <div class="card border-1 shadow-lg py-3">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">Blockchain</h4>
+                            <p class="lead card-subtitle mt-3">Private & Public Blockchains</p>
+                            <img src="images/undraw_solution_mindset_34bi.svg" class="card-img-top py-3" alt="...">
+                            <p class="card-text mx-5 text-muted d-none d-lg-block"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, dicta.</p>
+                            <a href="" class="btn btn-outline-primary btn-lg px-5 mt-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#blockchain" aria-controls="offcanvasTop">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-11 col-lg-3 col-xl-3 g-4">
+                    <div class="card border-1 shadow-lg py-3">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">User Experience</h4>
+                            <p class="lead card-subtitle mt-3">Lean UX Prototyping</p>
+                            <img src="images/undraw_mobile_ux_re_59hr.svg  " class="card-img-top py-3" alt="...">
+                            <p class="card-text mx-5 text-muted d-none d-lg-block"> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea, dicta.</p>
+                            <a href="" class="btn btn-outline-primary btn-lg px-5 mt-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#user-experience" aria-controls="offcanvasTop">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+<!-- end of columns -->
+
+            </div>
+
+        </div>
+    </section>
+
+ 
+
+    <!-- Reviews List -->
+    <section id="reviews" class="bg-light">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2><i class="bi bi-stars"></i> What Our Clients Have Said About Us</h2>
+                <p class="lead">Our Reviews</p>
+            </div>
+
+            <div class="row justify-content-center gy-5 my-1">
+                <div class="col-lg-8">
+                    <div class="list-group">
+                        <div class="list-group-item py-3">
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h5 class="mb-1">Very good communication and we spoke long time to have the best deal. They are patient and they can understand the real needing of the client.</h5>
+                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, autem quasi blanditiis repellendus eaque molestias explicabo sed accusamus veniam voluptas.</p>
+                            <small>Review by John Doe</small>
+                        </div>
+
+                        <div class="list-group-item py-3">
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h5 class="mb-1">The work of the team is AMAZING. The exceed my need, delivering in the time frame a high quality work. It's not the first time that I work with them, and it is always EXCELLENT, I 100% recommend.</h5>
+                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, autem quasi blanditiis repellendus eaque molestias explicabo sed accusamus veniam voluptas.</p>
+                            <small>Review by John Doe</small>
+                        </div>
+
+                        <div class="list-group-item py-3">
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </div>
+                            <h5 class="mb-1">Great communication and work</h5>
+                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, autem quasi blanditiis repellendus eaque molestias explicabo sed accusamus veniam voluptas.</p>
+                            <small>Review by John Doe</small>
+                        </div>
+
+                        <div class="list-group-item py-3">
+                            <div class="pb-2">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-half"></i>
+                            </div>
+                            <h5 class="mb-1">Great service and excellent communication</h5>
+                            <p class="mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, autem quasi blanditiis repellendus eaque molestias explicabo sed accusamus veniam voluptas.</p>
+                            <small>Review by John Doe</small>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Section -->
+    <section id="contact">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Get in Touch</h2>
+                <p class="lead">
+                    We love engaging with new clients and our community. If you have an inquiry about building digital products or any other questions, get in touch!​                </p>
+            </div>
+
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-6">
+                    <form>
+                        <label for="email" class="form-label">Email Address:</label>
+                        <div class="mb-1 input-group">
+                            <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                            <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+                            <span class="input-group-text">
+                                <span class="tt" data-bs-placement="right" title="Enter your email address">
+                                    <i class="bi bi-question-circle text-muted"></i>
+                                </span>
+                            </span>
+                        </div>
+
+                        <label for="name" class="form-label mt-2">Name:</label>
+                        <div class="mb-1 input-group">
+                            <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                            <input type="text" class="form-control" id="name" placeholder="John Doe">
+                            <span class="input-group-text">
+                                <span class="tt" data-bs-placement="right" title="Enter your first and last name">
+                                    <i class="bi bi-question-circle text-muted"></i>
+                                </span>
+                            </span>
+                        </div>
+
+                        <label for="subject" class="form-label mt-2">What Service Are You Looking From Us?</label>
+                        <div class="mb-1 input-group">
+                            <span class="input-group-text"><i class="bi bi-chat-right-dots-fill"></i></span>
+                            <select name="subject" id="subject" class="form-select">
+                                <option value="pricing" selected>Full Stack Development</option>
+                                <option value="content" selected>Machine Learning</option>
+                                <option value="other" selected>Blockchain</option>
+                                <option value="other" selected>User Experience</option>
+                            </select>
+                        </div>
+
+
+                        <label for="query" class="form-label mt-2">Your Message:</label>
+                        <textarea name="query" id="" class="form-control" style="height: 140px;"></textarea>
+
+                            <!-- We also can do like this
+
+                        <div class="mt-5 mb-4 form-floating">
+                            <textarea name="query" id="" class="form-control" style="height: 140px;"></textarea>
+                            <label for="query">Your query...</label>
+                        </div> -->
+
+                        <div class="my-4 text-center">
+                            <button type="submit" class="btn btn-secondary px-4">Submit</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Modals -->
+    <!-- create modal / modal trigger -->
+    <section class="bg-light margincustom">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Stay with Us</h2>
+                <p class="lead">Get the latest updates when they happen</p>
+            </div>
+            
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center">
+                    <p class="text-muted my-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus quae dolorem odio dignissimos, sit odit aspernatur recusandae placeat molestias asperiores.</p>
+                    <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#reg-modal">Register for Newest Updates</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Modal itself -->
+    <div class="modal fade" id="reg-modal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="modal-title">Get the Latest Updates</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti quae temporibus doloremque, iure porro rerum officiis eaque amet sint dolore?</p>
+                <label for="modal-email" class="form-label">Your email address</label>
+                <input type="text" class="form-control" id="modal-email" placeholder="example@gmail.com">
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary">Submit</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Off Canvas -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebar" aria-labelledby="sidebar-label"> 
+        <div class="offcanvas-header">
+            <h3 class="offcanvs-title" id="sidebar-label"><i class="bi bi-file-code me-3 "></i>Creative Technologies</h3>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="close"></button>
+        </div>
+        <div class="offcanvas-body ms-5">
+            <h3>Our Locations</h3>
+            <p> Creative Technologies, <br>
+                Colombo 03, <br>
+                Sri Lanka.
+            </p>
+
+            <p> Creative Technologies, <br>
+                Negombo, <br>
+                Sri Lanka.
+            </p>
+            <p class="py-3">
+                <span><i class="bi bi-envelope me-3 h5"></i>hello@creativetechnlogies.com</span> <br>
+                <span><i class="bi bi-facebook me-3 h5 "></i>@creativetechnlogies</span><br>
+                <span><i class="bi bi-instagram me-3 h5"></i>@creativetechnlogies</span><br>
+
+            </p>
+
+            <!-- Dropdown -->
+            <div class="mt-3">
+                <p class="lead">Feel free to contact us anytime!</p>
+                <a href="mailto:hello@creativetechnologies.com" class="btn btn-primary px-3">Mail Us</a>
+          </div>  
+        </div>
+    </div>
+
+    <!-- OFF canvas from top for services -->
+        <!-- Full stack development -->
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="full-stack" aria-labelledby="offcanvasTopLabel">
+        <div class="offcanvas-header">
+            <h2 id="offcanvasTopLabel" class="m-auto mt-3">Full Stack Development</h2>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="lead mx-5 text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, deserunt doloremque fuga eos voluptatibus suscipit natus inventore laudantium. Perferendis ad ipsum harum consectetur quod fuga a quia rerum illo, vel quis recusandae ratione culpa autem? Ea blanditiis quidem sit expedita, provident ipsum reprehenderit? Sunt maiores ipsam nisi deserunt, corrupti porro!
+            </p>
+            <span></span>
+
+        </div>
+        </div>
+
+        <!-- Machine Learning -->
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="machine-learning" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+                <h2 id="offcanvasTopLabel" class="m-auto mt-3">Machine Learning</h2>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <p class="lead mx-5 text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, deserunt doloremque fuga eos voluptatibus suscipit natus inventore laudantium. Perferendis ad ipsum harum consectetur quod fuga a quia rerum illo, vel quis recusandae ratione culpa autem? Ea blanditiis quidem sit expedita, provident ipsum reprehenderit? Sunt maiores ipsam nisi deserunt, corrupti porro!
+                </p>
+                <span></span>
+    
+            </div>
+            </div>
+
+        <!-- Blockchain -->
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="blockchain" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+                <h2 id="offcanvasTopLabel" class="m-auto mt-3">Blockchain</h2>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <p class="lead mx-5 text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, deserunt doloremque fuga eos voluptatibus suscipit natus inventore laudantium. Perferendis ad ipsum harum consectetur quod fuga a quia rerum illo, vel quis recusandae ratione culpa autem? Ea blanditiis quidem sit expedita, provident ipsum reprehenderit? Sunt maiores ipsam nisi deserunt, corrupti porro!
+                </p>
+                <span></span>
+    
+            </div>
+            </div>
+        
+        <!-- User Experience -->
+        <div class="offcanvas offcanvas-top" tabindex="-1" id="user-experience" aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+                <h2 id="offcanvasTopLabel" class="m-auto mt-3">User Experience</h2>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <p class="lead mx-5 text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, deserunt doloremque fuga eos voluptatibus suscipit natus inventore laudantium. Perferendis ad ipsum harum consectetur quod fuga a quia rerum illo, vel quis recusandae ratione culpa autem? Ea blanditiis quidem sit expedita, provident ipsum reprehenderit? Sunt maiores ipsam nisi deserunt, corrupti porro!
+                </p>
+                <span></span>
+    
+            </div>
+            </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script>
+        const tooltips = document.querySelectorAll(".tt") 
+        tooltips.forEach(t => {
+            new bootstrap.Tooltip(t)
+        })
+    </script>
+</body>
+</html>
